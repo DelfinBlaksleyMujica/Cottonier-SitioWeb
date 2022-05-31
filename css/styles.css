@@ -51,4 +51,27 @@ nav {
   font-family: "Fira Sans";
 }
 
+.index__nosotros__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "index__nosotros__formulario index__nosotros__mapa";
+}
+
+.index__nosotros__formulario {
+  margin-top: 150px;
+}
+.index__nosotros__formulario h3 {
+  font-family: "Fira Sans";
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.index__nosotros__mapa {
+  grid-area: index__nosotros__mapa;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
 /*# sourceMappingURL=styles.css.map */
