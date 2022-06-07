@@ -51,11 +51,25 @@ nav {
   font-family: "Fira Sans";
 }
 
+.index__nuestrasRedes__container {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.index__nuestrasRedes__container a img {
+  width: 60px;
+  height: 60px;
+}
+
 .index__nosotros__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 30rem;
   grid-template-areas: "index__nosotros__formulario index__nosotros__mapa";
+  background-color: #d87218;
+  margin-bottom: 0px;
 }
 
 .index__nosotros__formulario {
@@ -64,14 +78,35 @@ nav {
 .index__nosotros__formulario h3 {
   font-family: "Fira Sans";
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .index__nosotros__mapa {
   grid-area: index__nosotros__mapa;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index__formulario {
+  margin-left: 150px;
+}
+
+.btn-wsp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.logoWhatsApp {
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+  display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
+  height: 280px;
 }
 
 /*# sourceMappingURL=styles.css.map */
