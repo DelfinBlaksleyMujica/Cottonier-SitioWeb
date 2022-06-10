@@ -114,3 +114,177 @@ footer{
     align-items:center;
     height:280px;
 }
+
+/*NOSOTROS*/
+
+.nosotros__container{
+    background-color: #ABB2B9;
+}
+
+.titulo__nosotros__container{
+    margin-top: 0;
+    height:30rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/maquinasConHiloNaranja.jpg);
+    h1{
+        font-family: "Fira Sans";
+        font-weight: bolder;
+        color:white;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 90px;
+}
+}
+
+.nosotros__atributos__container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 60%;
+    height:18rem;
+    margin-top: -150px;
+    margin-left: 27rem;
+    background-color: rgb(83, 81, 79 );
+    border-radius: 10px;
+    div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 100px;
+            height:100px;
+        }
+        h2{
+            color:white;
+        }
+    }
+    
+}
+
+.nosotros__subtitulo__container{
+    display:flex;
+    justify-content: space-around;
+    height:10rem;
+    align-items: center;
+    text-align: center;
+    h4{
+        color: white;
+        width: 60%;
+        padding-left: 80px;
+        font-family: "Fira Sans"; 
+    }
+}
+
+.nosotros__descripcion__container{
+    display:grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "nosotros__descripcion__1 nosotros__descripcion__2";
+}
+
+.nosotros__descripcion__1{
+    grid-area: nosotros__descripcion__1;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    p{
+        width:40%;
+        text-align: center;
+        font-family: "Fira Sans";
+    }
+}
+
+.nosotros__descripcion__2{
+    grid-area: nosotros__descripcion__2;
+    display:flex;
+    justify-content:center;
+    align-items: flex-start;
+    p{
+        width:40%;
+        text-align: center;
+        margin-left: -400px;
+        font-family: "Fira Sans";
+
+    }
+}
+
+.nosotros__imagen__container{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly
+}
+
+.nosotros__imagen__container iframe{
+    width: 40%;
+    height:40rem;
+    margin-top: 30px;
+}
+
+.nosotros__informacionGeneral{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    height:20rem;
+    div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color:white;
+            font-family: "Fira Sans";
+        }
+}
+}
+
+/*CONTACTO*/
+
+
+.contacto__titulo__container{
+    background-image: url(../img/hilosBlancosFondoMadera.jpg);
+    height:20rem;
+    background-size:15% ;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    h1{
+        color:white;
+        font-family: "Fira Sans";
+        font-size: 90px;
+    }
+}
+
+
+.contacto__nuestroContacto__container{
+    display:grid;
+    grid-template-rows:20rem 20rem;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-template-areas:
+    "contacto__nuestroContacto__margenIzquierdo contacto__nuestroContactoMain__main contacto__nuestroContacto__margenDerecho"
+    "contacto__nuestroContacto__margenIzquierdo contacto__nuestroContacto__mapa contacto__nuestroContacto__margenDerecho";
+    div img{
+        width: 50px;
+        height:50px;
+    }
+    div h4{
+        margin-top: 10px;
+    }
+}
+
+.contacto__nuestroContactoMain__main{
+    grid-area: contacto__nuestroContactoMain__main;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contacto__nuestroContacto__telefono h4{
+    margin-top: 10px;
+}
